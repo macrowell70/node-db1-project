@@ -14,7 +14,7 @@ exports.checkAccountPayload = (req, res, next) => {
       status: 400,
       message: "budget of account must be a number"
     }) }
-    else if (budget < 0 || budget > 100000000) { next({
+    else if (budget < 0 || budget > 1000000) { next({
       status: 400,
       message: "budget of account is too large or too small"
     }) }
